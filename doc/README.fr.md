@@ -1,6 +1,6 @@
 # check_computer_on
 
-[简体中文](README.md) | Français | [Русский](README.ru.md) | [日本語](README.ja.md) | [English](README.en.md)
+[English](../README.md) | Français | [Русский](README.ru.md) | [日本語](README.ja.md) | [简体中文](README.zh.md)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
