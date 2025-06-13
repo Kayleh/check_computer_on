@@ -1,8 +1,5 @@
 document.getElementById('checkButton').addEventListener('click', function() {
-    // 显示提示
-    alert('电脑已开机！');
-    
-    // 触发多次五彩纸屑效果
+    // 立即触发五彩纸屑效果
     const duration = 3 * 1000;
     const animationEnd = Date.now() + duration;
     const defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 };
@@ -32,4 +29,14 @@ document.getElementById('checkButton').addEventListener('click', function() {
             origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 }
         });
     }, 250);
+
+    // 显示自定义提示框
+    const customAlert = document.getElementById('customAlert');
+    customAlert.classList.add('show');
+});
+
+// 关闭自定义提示框
+document.querySelector('.alert-close').addEventListener('click', function() {
+    const customAlert = document.getElementById('customAlert');
+    customAlert.classList.remove('show');
 }); 
