@@ -10,6 +10,10 @@
 
 Un outil simple et élégant de détection de l'état de démarrage de l'ordinateur pour vérifier rapidement l'état de fonctionnement de l'ordinateur.
 
+## Capture d'Écran
+
+![Capture d'Écran](../assets/images/page.png)
+
 ## Instructions d'Utilisation
 
 Cliquez sur le bouton de détection pour vérifier l'état de fonctionnement de l'ordinateur.

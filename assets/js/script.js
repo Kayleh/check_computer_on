@@ -1,3 +1,11 @@
+// 语言切换事件处理
+document.querySelectorAll('.lang-btn').forEach(btn => {
+    btn.addEventListener('click', function() {
+        const lang = this.getAttribute('data-lang');
+        setLanguage(lang);
+    });
+});
+
 document.getElementById('checkButton').addEventListener('click', function() {
     // 立即触发五彩纸屑效果
     const duration = 3 * 1000;

@@ -1,31 +1,61 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>电脑开机检查</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Computer Power Status Check</title>
+    <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 </head>
 <body>
+    <div class="language-switcher">
+        <button class="lang-toggle">
+            <span class="current-lang"></span>
+            <span class="toggle-icon">▼</span>
+        </button>
+        <div class="lang-dropdown">
+            <a href="javascript:void(0)" class="lang-btn" data-lang="en">🇬🇧 English</a>
+            <a href="javascript:void(0)" class="lang-btn" data-lang="fr">🇫🇷 Français</a>
+            <a href="javascript:void(0)" class="lang-btn" data-lang="ru">🇷🇺 Русский</a>
+            <a href="javascript:void(0)" class="lang-btn" data-lang="ja">🇯🇵 日本語</a>
+            <a href="javascript:void(0)" class="lang-btn" data-lang="zh">🇨🇳 简体中文</a>
+        </div>
+    </div>
     <div class="container">
         <div class="content">
-            <h1 class="title">电脑状态检测</h1>
-            <p class="subtitle">点击下方按钮检查电脑状态</p>
+            <h1 class="title">Computer Power Status Detection</h1>
             <div class="button-container">
                 <button id="checkButton">
-                    <span class="button-text">检查电脑是否开机</span>
+                    <span class="button-text">Check Status</span>
                     <span class="button-icon">🔍</span>
                 </button>
+            </div>
+            <div class="note-container">
+                <div class="note">
+                    <div class="note-header">
+                        <span class="note-icon">📝</span>
+                        <span class="note-title">Technical Note</span>
+                    </div>
+                    <p class="subtitle">Utilizing cutting-edge intelligent sensing and AI fusion technology matrix, through multi-dimensional hardware signal capture network and millisecond-level state recognition algorithm cluster, we build a full-chain power-on status monitoring system — from motherboard BIOS self-test pulses to power supply fluctuation curves, from CPU core temperature initial transitions to memory addressing timing dynamic tracking, relying on nanoscale sensor arrays and edge computing node collaborative operations, achieving penetrating detection of computer power-on full-cycle millisecond-level states, making every microsecond-level state transition during hardware power-up visible within our quantum-level precision monitoring network.</p>
+                </div>
             </div>
         </div>
     </div>
     <div id="customAlert" class="custom-alert">
         <div class="alert-content">
-            <p>电脑已开机！</p>
-            <button class="alert-close">确定</button>
+            <p class="alert-title">Congratulations 🎉</p>
+            <p class="alert-message">Your computer is powered on!</p>
+            <button class="alert-close">OK</button>
         </div>
     </div>
-    <script src="script.js"></script>
+    <footer class="footer">
+        <p class="footer-text">
+            <a href="https://www.kayleh.top" target="_blank" class="footer-link">Kayleh</a>
+            <span class="footer-separator">|</span>
+            <span class="footer-center">Data Science Center</span>
+        </p>
+    </footer>
+    <script src="assets/js/i18n.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html> 
